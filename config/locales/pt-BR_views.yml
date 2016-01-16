@@ -1,0 +1,10 @@
+pt-BR:
+  commands:
+    index:
+      Listing Commands: "Lista de Comandos"
+      Name: "Nome"
+      Description: "Descrição"
+      Command: "Comando"
+      Category: "Categoria"
+    new:
+      New Command: "Novo Comando"  

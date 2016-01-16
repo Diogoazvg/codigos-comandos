@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      command: Comando
+      category: Categoria
+    attributes:
+      command:
+        name: "Nome"
+        description: "Descrição"
+        command: "Comando"
+        category: "Categoria" 
+      category:
+        name: "Nome da categoria"
