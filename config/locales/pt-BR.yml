@@ -1,8 +1,5 @@
 ---
 pt-BR:
-  back: Voltar
-  destroy: Excluir
-  edit: Editar
   activerecord:
     errors:
       messages:

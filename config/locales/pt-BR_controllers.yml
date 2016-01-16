@@ -1,0 +1,4 @@
+pt-BR:
+  Command was successfully created: "Comando criado com sucesso"
+  Command was successfully updated: "Comando atualizado com sucesso"
+  Command was successfully destroyed: "Comando excluido com sucesso"

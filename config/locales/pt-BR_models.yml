@@ -5,9 +5,9 @@ pt-BR:
       category: Categoria
     attributes:
       command:
-        name: "Nome"
-        description: "Descrição"
-        command: "Comando"
-        category: "Categoria" 
+        Name: "Nome"
+        Description: "Descrição"
+        Command: "Comando"
+        Category: "Categoria" 
       category:
-        name: "Nome da categoria"
+        name: "Categoria"

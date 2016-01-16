@@ -18,7 +18,7 @@
         <td><%= command.category.name %></td>
         <td><%= link_to t('Show'), command %></td>
         <td><%= link_to t('Edit'), edit_command_path(command) %></td>
-        <td><%= link_to t('Destroy'), command, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('Destroy'), command, method: :delete, data: { confirm: t('Are you sure?') } %></td>
       </tr>
     <% end %>
   </tbody>

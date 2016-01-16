@@ -7,4 +7,24 @@ pt-BR:
       Command: "Comando"
       Category: "Categoria"
     new:
-      New Command: "Novo Comando"  
+      New Command: "Novo Comando"
+      Name: "Nome"
+    edit:
+      Editing Command: "Editar Comando"
+    show:
+      Name: "Nome"
+      Command: "Comando"
+      Description: "Descrição"
+      Category: "Categoria"
+    forms:
+      Name: "Nomes"
+  categories:
+    index:
+      Listing Categories: "Nova Categoria"
+      Name: "Categoria"
+    new:
+      New Category: "Nova Categoria"
+    edit:
+      Editing Category: "Editar Categoria"
+    show:
+      Name: "Nome"
