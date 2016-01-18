@@ -4,7 +4,18 @@ class CommandsController < ApplicationController
   # GET /commands
   # GET /commands.json
   def index
-    @commands = Command.all
+    @categories = Category.all.order(created_at: :desc).limit(5)
+    @categories2 = Category.all.order(created_at: :desc).offset(5).limit(5)
+    if params[:search] != nil
+      @commands = Command.search(params[:search])
+      if @commands.empty?()
+        @commands = Command.search2(params[:search])
+        if @commands.empty?()
+          @commands = Command.search3(params[:search])
+        end  
+      end
+    else @commands = Command.all
+    end 
   end
 
   # GET /commands/1

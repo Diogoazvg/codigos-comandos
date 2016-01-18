@@ -8,7 +8,6 @@ pt-BR:
       Category: "Categoria"
     new:
       New Command: "Novo Comando"
-      Name: "Nome"
     edit:
       Editing Command: "Editar Comando"
     show:
@@ -16,8 +15,6 @@ pt-BR:
       Command: "Comando"
       Description: "Descrição"
       Category: "Categoria"
-    forms:
-      Name: "Nomes"
   categories:
     index:
       Listing Categories: "Nova Categoria"

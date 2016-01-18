@@ -81,9 +81,29 @@ section {
   @extend .btn-xs;
 }
  th, td { 
-  padding: 5px; 
+  padding: 10px; 
 }
 
-a {
-  margin-top: 10px;
+small { 
+  padding: 30px; 
+}
+
+/* unvisited link */
+a:link {
+    color: #337AB7;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: #337AB7;
+}
+
+/* selected link */
+a:active {
+    color: blue;
 }
