@@ -88,6 +88,14 @@ small {
   padding: 30px; 
 }
 
+.btn-primary{
+  background-color: #777; 
+}
+
+.panel-primary{
+  margin-top: 20px;
+}
+
 /* unvisited link */
 a:link {
     color: #337AB7;
@@ -95,7 +103,7 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: red;
+    color: blue;
 }
 
 /* mouse over link */

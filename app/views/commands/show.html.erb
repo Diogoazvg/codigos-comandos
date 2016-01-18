@@ -20,5 +20,5 @@
   <%= @command.category.name %>
 </p>
 
-<%= link_to t('Edit'), edit_command_path(@command) %> |
-<%= link_to t('Back'), commands_path %>
+<%= link_to ('Editar <span class="glyphicon glyphicon-edit"></span>').html_safe, edit_command_path(@command), :class => "btn btn-primary"%> |
+<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, commands_path, :class => "btn btn-primary" %>

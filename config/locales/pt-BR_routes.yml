@@ -1,8 +1,11 @@
 pt-BR:
   Destroy: Excluir
   Edit: Editar
+  Edit <span class="glyphicon glyphicon-chevron"></span>: Editar
   Show: Ver Comando
+  Show <span class="glyphicon glyphicon-chevron-right"></span>: Ver Comando
   Back: Voltar
+  Back <span class="glyphicon glyphicon-eject"></span>: Voltar
   New Command: Novo comando
   New Category: Nova Categoria
   Are you sure?: Tem certeza?

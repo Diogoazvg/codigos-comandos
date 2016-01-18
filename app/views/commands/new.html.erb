@@ -1,5 +1,5 @@
-<h1> <%=t '.New Command'%> </h1>
+<!--<h1> <%=t '.New Command'%> </h1>-->
 
 <%= render 'form' %>
 
-<%= link_to t('Back'), commands_path %>
+<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, commands_path, :class => "btn btn-primary" %>

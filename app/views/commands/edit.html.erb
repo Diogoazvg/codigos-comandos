@@ -1,6 +1,7 @@
-<h1> <%=t '.Editing Command'%> </h1>
+<!--<h1> <%=t '.Editing Command'%> </h1>-->
 
 <%= render 'form' %>
 
-<%= link_to t('Show'), @command %> |
-<%= link_to t('Back'), commands_path %>
+<%= link_to ('Ver Comando' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, 
+@command, :class => "btn btn-primary" %> |
+<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, commands_path, :class => "btn btn-primary" %>
