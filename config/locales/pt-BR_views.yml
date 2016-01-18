@@ -25,3 +25,10 @@ pt-BR:
       Editing Category: "Editar Categoria"
     show:
       Name: "Nome"
+  views:
+    pagination:
+      truncate: "truncar"
+      next: "Próximo"
+      last: "Ultimo"
+      first: "Primeiro"
+      previous: "Anterior"
