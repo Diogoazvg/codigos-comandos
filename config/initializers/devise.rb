@@ -265,7 +265,7 @@ Devise.setup do |config|
   require "omniauth-facebook"
   
   #No ar
-  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'], scope: 'email', info_fields: 'email', callback_url: "https://codigos-comandos.herokuapp.com"
+  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'], scope: 'email'
   
   #config.omniauth :facebook, "1676686979209593", "aca40fc8294bdce4d9015b3d94a49f28", 
   #callback_url: "https://facebook.com/dialog/auth/",
