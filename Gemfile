@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.1.2'
+gem 'bundler', '~> 1.11', '>= 1.11.2'
 gem 'omniauth'  
 gem 'omniauth-facebook' 
 gem 'kaminari', '~> 0.16.1'
@@ -37,6 +38,7 @@ group :development, :test do
 end
 group :production do
   gem 'unicorn'
+  gem 'pg'
 end
 group :test do
   gem 'capybara'

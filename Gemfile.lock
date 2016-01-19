@@ -254,6 +254,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
+  bundler (~> 1.11, >= 1.11.2)
   byebug
   capybara
   coffee-rails (~> 4.1.0)
