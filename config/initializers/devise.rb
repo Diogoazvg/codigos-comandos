@@ -267,7 +267,7 @@ Devise.setup do |config|
   #No ar
   #config.omniauth :facebook, "1676686979209593", "aca40fc8294bdce4d9015b3d94a49f28", scope: 'email', info_fields: 'email,name,first_name,last_name,gender'
   config.omniauth :facebook, "FACEBOOK_APP_ID", "FACEBOOK_SECRET",
-                callback_url: "/auth/facebook/callback"
+                callback_url: "CALLBACK_URL"
 
   #Local
   #config.omniauth :facebook, "761409747325218", "8cdb9a43abfb8b9c9e2d737d43d46423"
