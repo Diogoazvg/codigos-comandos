@@ -271,6 +271,6 @@ Devise.setup do |config|
   #Local
   #config.omniauth :facebook, "761409747325218", "8cdb9a43abfb8b9c9e2d737d43d46423"
 
-config.omniauth :facebook, ENV'1676686979209593', ENV'aca40fc8294bdce4d9015b3d94a49f28'], scope: 'email', info_fields: 'email, name'
+config.omniauth :facebook, ENV'1676686979209593', ENV'aca40fc8294bdce4d9015b3d94a49f28', scope: 'email', info_fields: 'email, name'
   #ENV['RAILS_ENV'] ||= 'production'
 end
