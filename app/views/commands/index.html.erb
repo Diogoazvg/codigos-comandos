@@ -145,6 +145,7 @@
     </div>
     
   </div>
+    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
     <!-- /.row -->
     <p class="lead">
       by <%= link_to 'Diogo Azvg', root_path %>
@@ -153,6 +154,16 @@
     <hr>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
       <%= link_to ('Read More <span class="glyphicon glyphicon-chevron-right"></span>').html_safe, page_path('blogpost'), :class => "btn btn-primary" %>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=1676741862599222";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
     <!-- Footer -->
     <footer>
@@ -164,6 +175,5 @@
         </div>
         <!-- /.row -->
     </footer>
-
 </div>
 <!-- /.container -->

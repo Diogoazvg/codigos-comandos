@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.2'
+gem 'omniauth'  
+gem 'omniauth-facebook' 
 gem 'kaminari', '~> 0.16.1'
 gem 'rails', '4.2.5'
 gem 'sass-rails', '~> 5.0'
