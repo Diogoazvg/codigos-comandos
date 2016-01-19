@@ -30,7 +30,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: Rails.application.secrets.domain_name,
+    domain: "https://codigos-comandos.herokuapp.com",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "diogo.azvg2@gmail.com",#Rails.application.secrets.email_provider_username,
