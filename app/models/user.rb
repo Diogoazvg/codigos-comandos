@@ -48,7 +48,5 @@ end
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :confirmable,
-         :recoverable, :rememberable, :trackable, :omniauthable#, :omniauth_providers => [:facebook] 
-
-         #{:action=>"passthru", :controller=>"omniauth_callbacks", :provider=>:google_oauth2}
+         :recoverable, :rememberable, :trackable, :omniauthable
 end
