@@ -20,5 +20,9 @@
 #end
 
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :facebook, "1676686979209593", "aca40fc8294bdce4d9015b3d94a49f28"
+  #Heroku
+  provider :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
+  provider :gplus, ENV['GPLUS_KEY'], ENV['GPLUS_SECRET']
+  #local
+  #provider :facebook, "761409747325218", "8cdb9a43abfb8b9c9e2d737d43d46423"
 end
