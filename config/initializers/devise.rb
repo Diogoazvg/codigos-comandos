@@ -265,8 +265,11 @@ Devise.setup do |config|
   require "omniauth-facebook"
   
   #No ar
-  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'],
-  {:scope => 'email', :client_options => {:ssl => {:verify => false}}}
+  #config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'],
+  #{:scope => 'email', :client_options => 
+    #{:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
+
+  
   #, scope: 'email', setup: true#, info_fields: 'email,name'
   
   #config.omniauth :facebook, "1676686979209593", "aca40fc8294bdce4d9015b3d94a49f28" 
