@@ -270,8 +270,8 @@ Devise.setup do |config|
     #{:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
 
   #ENV['RAILS_ENV'] ||= 'production'
-  require "omniauth-facebook"
-  config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
+  #require "omniauth-facebook"
+  #config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
 
   require "omniauth-google-oauth2"
   config.omniauth :google_oauth2, ENV['GPLUS_KEY'], ENV['GPLUS_SECRET'], 
