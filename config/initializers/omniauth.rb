@@ -19,7 +19,7 @@
   #end
 #end
 require "omniauth-facebook"
-require "omniauth-google-oauth2"
+#require "omniauth-google-oauth2"
 Rails.application.config.middleware.use OmniAuth::Builder do
   #Heroku
   provider :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
