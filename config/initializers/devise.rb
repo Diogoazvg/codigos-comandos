@@ -262,26 +262,19 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
-  require "omniauth-facebook"
+  #require "omniauth-facebook"
   
   #No ar
   #config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'],
   #{:scope => 'email', :client_options => 
     #{:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
 
-  
-  #, scope: 'email', setup: true#, info_fields: 'email,name'
-  
-  #config.omniauth :facebook, "1676686979209593", "aca40fc8294bdce4d9015b3d94a49f28" 
-  #callback_url: "https://facebook.com/dialog/auth/",
-   #scope: 'email', info_fields: 'email'
-
-  #Local
-  #config.omniauth :facebook, "761409747325218", "8cdb9a43abfb8b9c9e2d737d43d46423"
-
-#config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'], 
-  #scope: 'email', info_fields: 'email, name'
-  
   #ENV['RAILS_ENV'] ||= 'production'
+  require "omniauth-facebook"
+  config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
+
+  require "omniauth-google-oauth2"
+  config.omniauth :google_oauth2, ENV['GPLUS_KEY'], ENV['GPLUS_SECRET'], 
+    { access_type: "offline", approval_prompt: "" }
 
 end
