@@ -21,11 +21,11 @@
 
 #require "omniauth-facebook"
 #require "omniauth-google-oauth2"
-Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :facebook, "1676686979209593", "aca40fc8294bdce4d9015b3d94a49f28"
-  provider :google_oauth2, "395356569321-8a6si6n8pvqt71ds2mk576dcibqd0925.apps.googleusercontent.com", "-sy40AtweE8bOwAE1uJKF2pO" 
+#Rails.application.config.middleware.use OmniAuth::Builder do
+ # provider :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
+  #provider :google_oauth2, ENV['GPLUS_KEY'], ENV['GPLUS_SECRET'] 
    # { access_type: "offline", approval_prompt: "" }
-end
+#end
 
 
 
