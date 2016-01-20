@@ -270,11 +270,21 @@ Devise.setup do |config|
     #{:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
 
   #ENV['RAILS_ENV'] ||= 'production'
-  #require "omniauth-facebook"
-  #config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
+  #Heroku
+  require "omniauth-facebook"
+  config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_SECRET"]
 
   require "omniauth-google-oauth2"
   config.omniauth :google_oauth2, ENV['GPLUS_KEY'], ENV['GPLUS_SECRET'], 
     { access_type: "offline", approval_prompt: "" }
+
+
+  #Local
+  #require "omniauth-facebook"
+  #config.omniauth :facebook, "761409747325218", "8cdb9a43abfb8b9c9e2d737d43d46423"
+
+  #require "omniauth-google-oauth2"
+  #config.omniauth :google_oauth2, "395356569321-t1f73uvc3fd4i6eb4ai41jeiidk258rn.apps.googleusercontent.com", "CsFWiUHxMB-0r-S2Pji3WiUs", 
+    #{ access_type: "offline", approval_prompt: "" }  
 
 end

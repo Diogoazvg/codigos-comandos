@@ -38,7 +38,7 @@ Rails.application.configure do
     :openssl_verify_mode  => 'none'
   }
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'http://localhost:3000'} #'https://codigos-comandos.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'https://codigos-comandos.herokuapp.com'} #'https://codigos-comandos.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
   # Send email in development mode?
