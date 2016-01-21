@@ -12,21 +12,6 @@
   <div class="col-md-4">
 
     <!-- Blog Search Well -->
-    <div class="well">
-        <h4><%=t '.Search commands'%></h4>
-        <%= form_tag(commands_path, :method => :get) do %>
-          <div class="input-group">
-            <%=text_field_tag 'search', nil, placeholder: 'Digite um texto...', class: "form-control"%>
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="submit">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-            </span>
-          </div>
-        <% end %>        
-
-        <!-- /.input-group -->
-    </div>
 
         <!-- Blog Categories Well -->
         <div class="well">
@@ -63,8 +48,26 @@
         </div>
 
     </div>
+
+
         <!-- Blog Entries Column -->
     <div class="col-md-5">
+      <div class="well">
+        <h4><%=t '.Search commands'%></h4>
+        <%= form_tag(commands_path, :method => :get) do %>
+          <div class="input-group">
+            <%=text_field_tag 'search', nil, placeholder: 'Digite um texto...', class: "form-control"%>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+        <% end %>        
+
+        <!-- /.input-group -->
+    </div>
+
       <h1 class="page-header">
         <!--Page Heading </br> </br>-->
         <h8><%=t'.Command List'%></h8>
