@@ -2,10 +2,10 @@
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho&effect=anaglyph">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone Kaffeesatz">
-<p>
+<h8>
   <strong><%=t '.Name' %></strong>
   <%= @category.name %>
-</p>
-
+</h8>
+<p></p>
 <%= link_to ('Editar <span class="glyphicon glyphicon-edit"></span>').html_safe, edit_category_path(@category), :class => "btn btn-primary"%> |
 <%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, categories_path, :class => "btn btn-primary" %>
