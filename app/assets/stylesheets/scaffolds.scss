@@ -85,11 +85,11 @@ section {
   font-family: 'Poiret One', serif;
   text-shadow: 4px 4px 4px #aaa;
   color: black;
-
 }
 small { 
   padding: 20px;
   font-family: 'Poiret One', serif;
+  color: #FFFFFF;
 }
 
 .btn-primary{
@@ -113,24 +113,28 @@ h4{
 
 h1{
 }
+h8{
+ font-family: 'Yanone Kaffeesatz', serif;
+ color: #FFFFFF; 
+}
 
 li{
   font-family: 'Poiret One', serif;
 }
 
 p{
-  color: white;
+  color: #2AEF15;
   font-family: 'Yanone Kaffeesatz', serif;
 }
 
 /* unvisited link */
 a:link {
-    color: #337AB7;
+    color: blue;
 }
 
 /* visited link */
 a:visited {
-    color: blue;
+    color: white;
 }
 
 /* mouse over link */

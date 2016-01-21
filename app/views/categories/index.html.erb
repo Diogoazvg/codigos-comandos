@@ -1,6 +1,7 @@
-<p id="notice"><%= notice %></p>
-
-<h1> <%=t '.Listing Categories'%> </h1>
+<h1 class="font-effect-anaglyph">Códigos & Comandos</h1>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho&effect=anaglyph">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone Kaffeesatz">
 
 <table>
   <thead>
@@ -14,8 +15,8 @@
     <% @categories.each do |category| %>
       <tr>
         <td><%= category.name %></td>
-        <td><%= link_to ('Ver Comando' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, category, id: "ver", :class => "btn btn-primary" %></td>
-        <td><%= link_to ('Editar' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, edit_category_path(category), id: "ver", :class => "btn btn-primary" %></td>
+        <td><%= link_to ('Ver Categoria' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, category, id: "ver", :class => "btn btn-primary" %></td>
+        <td><%= link_to ('Editar' '<span class="glyphicon glyphicon-edit"></span>').html_safe, edit_category_path(category), id: "ver", :class => "btn btn-primary" %></td>
 
         <!--<td><%= link_to t('Destroy'), category, method: :delete, data: { confirm: t('Are you sure?') } %></td>-->
       </tr>

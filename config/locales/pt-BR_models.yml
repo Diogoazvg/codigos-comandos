@@ -3,6 +3,7 @@ pt-BR:
     models:
       command: Comando
       category: Categoria
+      user: Usuário
     attributes:
       command:
         name: "Nome"
@@ -11,3 +12,8 @@ pt-BR:
         category: "Categoria" 
       category:
         name: "Categoria"
+      user:
+        password: Senha
+        name: Nome
+        password_confirmation: "Confirmação de senha"
+        current_password: Senha atual
