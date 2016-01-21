@@ -35,7 +35,7 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
+  background-image: url(/assets/linguagens.jpg);
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
@@ -82,10 +82,14 @@ section {
 }
  th, td { 
   padding: 10px; 
-}
+  font-family: 'Poiret One', serif;
+  text-shadow: 4px 4px 4px #aaa;
+  color: black;
 
+}
 small { 
-  padding: 20px; 
+  padding: 20px;
+  font-family: 'Poiret One', serif;
 }
 
 .btn-primary{
@@ -101,19 +105,24 @@ small {
 
 }
 
-.fb-like{
-}
-
 h4{
+  font-family: 'Poiret One', serif;
   padding: 5px;
   margin-left: 20px;
 }
 
 h1{
-  font-family: 'Tangerine', serif;
-  font-size: 48px;
-  text-shadow: 4px 4px 4px #aaa;
 }
+
+li{
+  font-family: 'Poiret One', serif;
+}
+
+p{
+  color: white;
+  font-family: 'Yanone Kaffeesatz', serif;
+}
+
 /* unvisited link */
 a:link {
     color: #337AB7;

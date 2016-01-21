@@ -25,7 +25,7 @@ pt-BR:
         subject: "Senha alterada"
     omniauth_callbacks:
       failure: "Não foi possível autenticar-lo de %{kind} porque \"%{reason}\"."
-      success: "Autenticado com sucesso de %{kind} conta."
+      success: "Autenticado com sucesso usando sua conta do %{kind}."
     passwords:
       no_token: "Você não pode acessar essa página sem proveniente de um e-mail de redefinição de senha. Se você vir de um e-mail de redefinição de senha, por favor, certifique-se de que você usou o URL completo fornecido."
       send_instructions: "Você receberá um e-mail com instruções sobre como redefinir sua senha em poucos minutos."
@@ -41,9 +41,9 @@ pt-BR:
       update_needs_confirmation: "Você atualizou sua conta com êxito, mas precisamos verificar o seu novo endereço de e-mail. Por favor, verifique seu e-mail e clique no link de confirmação para confirmar o seu novo endereço de e-mail."
       updated: "A sua conta foi atualizada com sucesso."
     sessions:
-      signed_in: "Assinado em sucesso."
-      signed_out: "Assinado em sucesso."
-      already_signed_out: "Assinado em sucesso."
+      signed_in: "Logado com sucesso."
+      signed_out: "Você saiu."
+      already_signed_out: "Voce já tinha saído."
     unlocks:
       send_instructions: "Você receberá um e-mail com instruções sobre como desbloquear a sua conta em poucos minutos."
       send_paranoid_instructions: "Se a sua conta existe, você receberá um e-mail com instruções sobre como desbloqueá-lo em poucos minutos."

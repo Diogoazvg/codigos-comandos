@@ -1,11 +1,12 @@
-<p id="notice"><%= notice %></p>
 <!-- Page Content -->
 <div class="container">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho&effect=anaglyph">
-  <h1 class="font-effect-anaglyph">Códigos & Comandos</h1>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone Kaffeesatz">
+    <h1 class="font-effect-anaglyph">Códigos & Comandos</h1>
   <p class="lead">
       by <a href="https://www.facebook.com/Diogo.Azvg">Diogo Azvg</a>
-    </p>
+  </p>
   <div class="row">
 
   <div class="col-md-4">
@@ -15,7 +16,7 @@
         <h4><%=t '.Search commands'%></h4>
         <%= form_tag(commands_path, :method => :get) do %>
           <div class="input-group">
-            <%=text_field_tag 'search', nil, placeholder: 'Enter search term...', class: "form-control"%>
+            <%=text_field_tag 'search', nil, placeholder: 'Digite um texto...', class: "form-control"%>
             <span class="input-group-btn">
               <button class="btn btn-default" type="submit">
                 <span class="glyphicon glyphicon-search"></span>
@@ -58,7 +59,7 @@
            
         <div class="well">
           <h4><%=t '.To announce?'%></h4>
-          <p><%=t '.Contact:'%> diogo.azvg2@gmail.com </p>
+          <h4><%=t '.Contact:'%> diogo.azvg2@gmail.com </h4>
         </div>
 
     </div>
@@ -66,7 +67,7 @@
     <div class="col-md-5">
       <h1 class="page-header">
         <!--Page Heading </br> </br>-->
-        <small><%=t'.Command List'%></small>
+        <p><%=t'.Command List'%></p>
       </h1>
 
       <div class="well well-sm">
@@ -101,7 +102,7 @@
       </h2>
       <%= paginate @commands %>
       <!--<p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>-->
-      <hr>
+     
     
       <!-- Second Blog Post -->
       <!--<h2>
@@ -139,7 +140,7 @@
 
     <div class="col-md-3">
       <h1 class="page-header">
-        <small><%=t '.To announce?'%></small>
+        <p><%=t '.To announce?'%></p>
       </h1>
 
       <div class="well well-sm">
