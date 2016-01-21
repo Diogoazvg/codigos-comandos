@@ -14,14 +14,12 @@
     <% @categories.each do |category| %>
       <tr>
         <td><%= category.name %></td>
-        <td><%= link_to 'Ver Categoria', category %></td>
-        <td><%= link_to 'Editar', edit_category_path(category) %></td>
+        <td><%= link_to ('Ver Comando' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, category, id: "ver", :class => "btn btn-primary" %></td>
+        <td><%= link_to ('Editar' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, edit_category_path(category), id: "ver", :class => "btn btn-primary" %></td>
+
         <!--<td><%= link_to t('Destroy'), category, method: :delete, data: { confirm: t('Are you sure?') } %></td>-->
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to t('New Category'), new_category_path %>
+<%= paginate @categories %>
