@@ -85,7 +85,7 @@ section {
 }
 
 small { 
-  padding: 30px; 
+  padding: 20px; 
 }
 
 .btn-primary{
@@ -104,6 +104,16 @@ small {
 .fb-like{
 }
 
+h4{
+  padding: 5px;
+  margin-left: 20px;
+}
+
+h1{
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
 /* unvisited link */
 a:link {
     color: #337AB7;
