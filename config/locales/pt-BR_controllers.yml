@@ -2,3 +2,6 @@ pt-BR:
   Command was successfully created: "Comando criado com sucesso"
   Command was successfully updated: "Comando atualizado com sucesso"
   Command was successfully destroyed: "Comando excluido com sucesso"
+  Category was successfully created.: "Categoria criada com sucesso"
+  Category was successfully updated.: "Categoria atualizada com sucesso"
+  Category was successfully destroyed.: "Categoria excluida com sucesso"

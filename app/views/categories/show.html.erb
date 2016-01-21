@@ -1,9 +1,7 @@
-<p id="notice"><%= notice %></p>
-
 <p>
-  <strong>Name:</strong>
+  <strong><%=t '.Name' %></strong>
   <%= @category.name %>
 </p>
 
-<%= link_to t('Edit'), edit_category_path(@category) %> |
-<%= link_to t('Back'), categories_path %>
+<%= link_to ('Editar <span class="glyphicon glyphicon-edit"></span>').html_safe, edit_category_path(@category), :class => "btn btn-primary"%> |
+<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, categories_path, :class => "btn btn-primary" %>

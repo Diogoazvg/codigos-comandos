@@ -16,10 +16,10 @@ pt-BR:
     edit:
       Editing Command: "Editar Comando"
     show:
-      Name: "Nome"
-      Command: "Comando"
-      Description: "Descrição"
-      Category: "Categoria"
+      Name: "Nome:"
+      Command: "Comando:"
+      Description: "Descrição:"
+      Category: "Categoria:"
   categories:
     index:
       Listing Categories: "Nova Categoria"
@@ -29,7 +29,7 @@ pt-BR:
     edit:
       Editing Category: "Editar Categoria"
     show:
-      Name: "Nome"
+      Name: "Categoria:"
   views:
     pagination:
       truncate: "truncar"
