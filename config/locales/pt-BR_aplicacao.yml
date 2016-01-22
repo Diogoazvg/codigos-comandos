@@ -29,6 +29,8 @@ pt-BR:
   Category was successfully created: "Categoria criada com sucesso"
   Category was successfully updated: "Categoria atualizada com sucesso"
   Category was successfully destroyed: "Categoria excluida com sucesso"
+  You can also enter: "Você também pode entrar com"
+  Hello, you are logged in as:: "Olá você está logado como:"
   commands:
     index:
       Command List: "Lista de Comandos"

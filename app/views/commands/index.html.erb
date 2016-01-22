@@ -15,9 +15,6 @@
       <!-- Blog Search Well -->
 
           <!-- Blog Categories Well -->
-          <%if current_user.admin?%>
-    <p>SOU ADMINISTRADOR!!!</p>
-  <% end %>
           <div class="well">
             <h4><%=t '.Recent Categories'%></h4>
             <div class="row">
@@ -146,6 +143,7 @@
       </div>
 
       <div class="col-md-3">
+      <login><%=t('Hello, you are logged in as:')%>&nbsp &nbsp<%= current_user.name%><login>
         <h1 class="page-header">
           <h8><%=t '.To announce?'%></h8>
         </h1>

@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   validates :email, uniqueness: true
+  validates_presence_of :name
+
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
 
