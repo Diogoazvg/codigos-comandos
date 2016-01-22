@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   resources :commands
   resources :categories
   root to: 'commands#index'
