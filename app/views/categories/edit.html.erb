@@ -1,6 +1,6 @@
-<h1> <%=t '.Editing Category'%> </h1>
+<!--<h1> <%=t '.Editing Category'%> </h1>-->
 
 <%= render 'form' %>
 
-<%= link_to t('Show'), @category %> |
-<%= link_to t('Back'), categories_path %>
+<td><%= link_to ('Ver Categoria' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, @category, id: "ver", :class => "btn btn-primary" %></td>
+<td><%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span>' 'Voltar').html_safe, categories_path, id: "ver", :class => "btn btn-primary" %></td>
