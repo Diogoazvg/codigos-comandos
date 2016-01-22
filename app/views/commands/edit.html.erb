@@ -2,6 +2,8 @@
 
 <%= render 'form' %>
 
-<%= link_to ('Ver Comando' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, 
-@command, :class => "btn btn-primary" %> |
-<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, commands_path, :class => "btn btn-primary" %>
+<% if user_signed_in? %>
+	<%= link_to ('Ver Comando' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, 
+		@command, :class => "btn btn-primary" %> |
+	<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, commands_path, :class => "btn btn-primary" %>
+<% end -%>

@@ -1,19 +1,24 @@
-<%= simple_form_for(@category) do |f| %>
-  <%= f.error_notification %>
-  <h1 class="font-effect-anaglyph">Códigos & Comandos</h1>
-  <div class="panel panel-primary">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho&effect=anaglyph">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone Kaffeesatz">
-  	<div class="panel-heading">Criar nova categoria</div>
-  	<div class="panel-body">
-    	<div class="form-inputs" aria-describedby="sizing-addon1">
-    		<%= f.input :name %>
-  		</div>
+<h1 class="font-effect-anaglyph">Códigos & Comandos</h1
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho&effect=anaglyph">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone Kaffeesatz">
 
-  		<div class="form-actions">
-    		<%= f.button :submit %>
-  		</div>
-  	</div>
-  </div>
+<% if user_signed_in? %>
+  <%= simple_form_for(@category) do |f| %>
+    <!--<%= f.error_notification %>-->
+    <div class="panel panel-primary">
+    	<div class="panel-heading">Criar nova categoria</div>
+    	<div class="panel-body">
+      	<div class="form-inputs" aria-describedby="sizing-addon1">
+      		<%= f.input :name %>
+    		</div>
+
+    		<div class="form-actions">
+      		<%= f.button :submit %>
+    		</div>
+    	</div>
+    </div>
+  <% end %>
+<% else %>
+  <h9>Você precisa estar logado para visualizar essa página, por favor faça seu login, logo acima no topo da página.
 <% end %>

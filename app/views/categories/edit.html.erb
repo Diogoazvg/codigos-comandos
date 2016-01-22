@@ -1,6 +1,9 @@
 <!--<h1> <%=t '.Editing Category'%> </h1>-->
 
 <%= render 'form' %>
+<% if user_signed_in? %>
+	<td><%= link_to ('Ver Categoria' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, @category, id: "ver", :class => "btn btn-primary" %></td>
+	<td><%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span>' 'Voltar').html_safe, categories_path, id: "ver", :class => "btn btn-primary" %></td>
+<% end -%>
 
-<td><%= link_to ('Ver Categoria' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, @category, id: "ver", :class => "btn btn-primary" %></td>
-<td><%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span>' 'Voltar').html_safe, categories_path, id: "ver", :class => "btn btn-primary" %></td>
+	

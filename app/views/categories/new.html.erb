@@ -1,5 +1,7 @@
-<!--<h1> <%=t '.New Category'%> </h1>-->
+
+	<!--<h1> <%=t '.New Category'%> </h1>-->
 
 <%= render 'form' %>
-
-<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Ver todas as categorias').html_safe, categories_path, :class => "btn btn-primary" %>
+<% if user_signed_in? %>
+	<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Ver todas as categorias').html_safe, categories_path, :class => "btn btn-primary" %>
+<% end -%>

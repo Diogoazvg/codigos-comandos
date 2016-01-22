@@ -1,26 +1,31 @@
-<h1 class="font-effect-anaglyph">Códigos & Comandos</h1>
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho&effect=anaglyph">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone Kaffeesatz">
+  <h1 class="font-effect-anaglyph">Códigos & Comandos</h1>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rancho&effect=anaglyph">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poiret One">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone Kaffeesatz">
 
-<table>
-  <thead>
-    <tr>
-      <th> <%=t '.Name'%> </th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @categories.each do |category| %>
+<% if user_signed_in? %>
+  <table>
+    <thead>
       <tr>
-        <td><%= category.name %></td>
-        <td><%= link_to ('Ver Categoria' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, category, id: "ver", :class => "btn btn-primary" %></td>
-        <td><%= link_to ('Editar' '<span class="glyphicon glyphicon-edit"></span>').html_safe, edit_category_path(category), id: "ver", :class => "btn btn-primary" %></td>
-
-        <!--<td><%= link_to t('Destroy'), category, method: :delete, data: { confirm: t('Are you sure?') } %></td>-->
+        <th> <%=t '.Name'%> </th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-<%= paginate @categories %>
+    </thead>
+
+    <tbody>
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= category.name %></td>
+          <td><%= link_to ('Ver Categoria' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, category, id: "ver", :class => "btn btn-primary" %></td>
+          <td><%= link_to ('Editar' '<span class="glyphicon glyphicon-edit"></span>').html_safe, edit_category_path(category), id: "ver", :class => "btn btn-primary" %></td>
+
+          <!--<td><%= link_to t('Destroy'), category, method: :delete, data: { confirm: t('Are you sure?') } %></td>-->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= paginate @categories %>
+  
+<% else %>
+  <h9>Você precisa estar logado para visualizar essa página, por favor faça seu login, logo acima no topo da página.
+<% end %>

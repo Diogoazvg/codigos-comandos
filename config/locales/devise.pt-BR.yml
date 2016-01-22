@@ -58,3 +58,32 @@ pt-BR:
       not_saved:
         one: "1 erro proibido este %{resource} de ser salvo:"
         other: "%{count} erros proibidos este %{resource} de ser salvo:"
+  activerecord:
+    models:
+      user: Usuário
+    attributes:
+      user:
+        password: Senha
+        name: Nome
+        password_confirmation: "Confirmação de senha"
+        current_password: Senha atual
+  commands:
+  Sign out: Sair
+  Edit account: Editar Conta
+  Sign in: Entrar
+  Sign up: Criar Conta
+  Users: Usuários
+  Remember me: Lembre de mim
+  Forgot password?: Esqueceu sua senha?
+  User: Usuário
+  Leave these fields blank if you dont want to change your password: "Deixe estes campos em branco se você não quiser mudar a sua senha"
+  You must enter your current password to make changes: "Você deve digitar sua senha atual para fazer mudanças"
+  Unhappy? Well be sad to see you go: "Que pena, uma tristesa você ter que sair!!!"
+  Cancel Account: "Excluir Conta"
+  Forgot your password?: "Esqueceu sua senha?"
+  We'll send password reset instructions: "Nós enviaremos instruções para redefinição de senha"
+  Reset Password: "Trocar a senha"
+  Sign in with Facebook: "Entrar com Facebook"
+  Sign in with Google: "Entrar com conta do Google"
+  Update: "Atualizar"
+  Cancel my account: "Excluir minha conta"

@@ -2,4 +2,6 @@
 
 <%= render 'form' %>
 
-<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, commands_path, :class => "btn btn-primary" %>
+<% if user_signed_in? %>
+	<%= link_to ('<span class="glyphicon glyphicon-chevron-left"></span> Voltar').html_safe, commands_path, :class => "btn btn-primary" %>
+<% end -%>	
