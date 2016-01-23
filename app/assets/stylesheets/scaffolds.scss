@@ -125,6 +125,13 @@ h9{
  font-size: 20px;
 }
 
+h10{
+ font-family: 'Yanone Kaffeesatz', serif;
+ color: #FFFFFF;
+ padding: 430px; 
+ font-size: 40px;
+}
+
 li{
   font-family: 'Poiret One', serif;
 }
@@ -135,7 +142,9 @@ p{
 }
 
 p1{
-  white-space: pre
+  white-space: pre;
+  top: 30px;
+  position: relative;
 }
 
 login{
