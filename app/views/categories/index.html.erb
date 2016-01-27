@@ -15,9 +15,9 @@
     <tbody>
       <% @categories.each do |category| %>
         <tr>
-          <td><%= category.name %></td>
+          <th><%= category.name %></th>
           <td><%= link_to ('Ver Categoria' '<span class="glyphicon glyphicon-hand-up"></span>').html_safe, category, id: "ver", :class => "btn btn-primary" %></td>
-          <td><%= link_to ('Editar' '<span class="glyphicon glyphicon-edit"></span>').html_safe, edit_category_path(category), id: "ver", :class => "btn btn-primary" %></td>
+          <!-- <td><%= link_to ('Editar' '<span class="glyphicon glyphicon-edit"></span>').html_safe, edit_category_path(category), id: "ver", :class => "btn btn-primary" %></td> -->
 
           <!--<td><%= link_to t('Destroy'), category, method: :delete, data: { confirm: t('Are you sure?') } %></td>-->
         </tr>

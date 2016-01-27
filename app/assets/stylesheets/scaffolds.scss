@@ -80,12 +80,20 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
- th, td { 
+ th{ 
+  padding: 10px; 
+  font-family: 'Poiret One', serif;
+  text-shadow: 4px 4px 4px #aaa;
+  color: white;
+}
+
+td { 
   padding: 10px; 
   font-family: 'Poiret One', serif;
   text-shadow: 4px 4px 4px #aaa;
   color: black;
 }
+
 small { 
   padding: 20px;
   font-family: 'Poiret One', serif;
