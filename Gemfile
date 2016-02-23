@@ -23,7 +23,7 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
-#gem 'pg'
+gem 'pg'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 group :development do
