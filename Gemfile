@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.0'
 gem 'omniauth-multiple_providers'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
@@ -23,7 +23,7 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
-gem 'pg'
+#gem 'pg'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 group :development do
