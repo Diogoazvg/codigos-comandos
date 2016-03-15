@@ -7,19 +7,15 @@ class CommandsController < ApplicationController
     @categories = Category.all.order(created_at: :desc).limit(5)
     @categories2 = Category.all.order(created_at: :desc).offset(5).limit(5)
     if params[:search] != nil
-      @commands = Command.search(params[:search])
-      @commands = Command.page(params[:page]).per(15)
+      @commands = Command.search(params[:search]).page(params[:page]).per(15)
       if @commands.empty?()
-        @commands = Command.search2(params[:search])
-        @commands = Command.page(params[:page]).per(15)
+        @commands = Command.search2(params[:search]).page(params[:page]).per(15)
         if @commands.empty?()
-          @commands = Command.search3(params[:search])
-          @commands = Command.page(params[:page]).per(15)
+          @commands = Command.search3(params[:search]).page(params[:page]).per(15)
         end  
       end
     else 
-      @commands = Command.all
-      @commands = Command.page(params[:page]).per(15)
+      @commands = Command.all.page(params[:page]).per(15)
     end 
   end
 
